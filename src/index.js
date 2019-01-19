@@ -1,26 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
-import { Header, Footer } from "react-fullpage";
 import "./index.css";
 import { license } from "./keys";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
 const Fullpage = () => (
   <>
-    <Header>
-      <a href="#Main">Main</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Projects</a>
-      <a href="#About">About</a>
-      <a href="#Contact">Contact</a>
-    </Header>
-    <Footer>
-      <a href="">Dcoumentation</a>
-      <a href="">Example Source</a>
-      <a href="">About</a>
-    </Footer>
+    <Navbar />
+    <Footer />
+
     <ReactFullpage
       licenseKey={license}
       navigation

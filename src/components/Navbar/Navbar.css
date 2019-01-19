@@ -1,0 +1,11 @@
+/* MainNavigation.js */
+
+.brand-logo {
+  padding-left: 20px !important;
+}
+
+@media (max-width: 600px) {
+  .brand-logo {
+    padding-left: 5px !important;
+  }
+}
