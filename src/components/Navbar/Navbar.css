@@ -9,3 +9,8 @@
     padding-left: 5px !important;
   }
 }
+
+.icon-button:hover,
+.icon-button.active {
+  color: aqua !important;
+}

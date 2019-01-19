@@ -33,27 +33,27 @@ const NavbarComponent = () => {
             <ul className="right hide-on-med-and-down">
               <li>
                 <a href="#Main">
-                  <FaHome />
+                  <FaHome className="icon-button" />
                 </a>
               </li>
               <li>
                 <a href="#Skills">
-                  <FaGraduationCap />
+                  <FaGraduationCap className="icon-button" />
                 </a>
               </li>
               <li>
                 <a href="#Projects">
-                  <FaDev />
+                  <FaDev className="icon-button" />
                 </a>
               </li>
               <li>
                 <a href="#About">
-                  <FaUser />
+                  <FaUser className="icon-button" />
                 </a>
               </li>
               <li style={{ marginRight: "20px" }}>
                 <a href="#Contact">
-                  <FaAddressCard />
+                  <FaAddressCard className="icon-button" />
                 </a>
               </li>
             </ul>
