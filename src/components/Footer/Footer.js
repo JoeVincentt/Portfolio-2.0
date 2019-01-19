@@ -34,7 +34,7 @@ const FooterComponent = () => {
       >
         <footer className="page-footer transparent">
           <div className="footer-copyright">
-            <div className="container">© 2018 EB</div>
+            <div className="container" />
             <Box>
               {" "}
               <a

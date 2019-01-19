@@ -5,6 +5,10 @@ import "./index.css";
 import { license } from "./keys";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Main from "./components/Main/Main";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Particles from "react-particles-js";
 
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
@@ -12,7 +16,7 @@ const Fullpage = () => (
   <>
     <Navbar />
     <Footer />
-
+    <Particles className="particles" />
     <ReactFullpage
       licenseKey={license}
       navigation
@@ -23,51 +27,19 @@ const Fullpage = () => (
         return (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <p>Main</p>
-
-              <button onClick={() => fullpageApi.moveSectionDown()}>
-                Down
-              </button>
+              <Main />
             </div>
             <div className="section">
-              <p>Skills</p>
-
-              <button
-                className="myButton"
-                onClick={() => fullpageApi.moveSectionUp()}
-              >
-                Up
-              </button>
+              <Skills />
             </div>
             <div className="section">
               <p>Projects</p>
-
-              <button
-                className="myButton"
-                onClick={() => fullpageApi.moveSectionUp()}
-              >
-                Last page
-              </button>
             </div>
             <div className="section">
-              <p>About</p>
-
-              <button
-                className="myButton"
-                onClick={() => fullpageApi.moveSectionUp()}
-              >
-                Up
-              </button>
+              <About />
             </div>
             <div className="section">
               <p>Contact</p>
-
-              <button
-                className="myButton"
-                onClick={() => fullpageApi.moveSectionUp()}
-              >
-                Up
-              </button>
             </div>
           </ReactFullpage.Wrapper>
         );
