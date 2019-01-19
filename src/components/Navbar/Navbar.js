@@ -10,6 +10,48 @@ import {
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import "./Navbar.css";
+import posed from "react-pose";
+import SplitText from "react-pose-text";
+
+const wordPoses = {
+  draggable: true
+};
+
+const charPoses = {
+  drag: {
+    y: 0,
+    transition: ({ charInWordIndex }) => ({
+      type: "spring",
+      velocity: 100 * Math.sin(1 + charInWordIndex),
+      damping: 0
+    })
+  },
+  dragEnd: {
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 10,
+      stiffness: 1000
+    }
+  }
+};
+
+const Box = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1,
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
+  },
+  hover: {
+    scale: 1.2,
+    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
+  },
+  press: {
+    scale: 1.1,
+    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
+  }
+});
 
 const NavbarComponent = () => {
   return (
@@ -27,34 +69,47 @@ const NavbarComponent = () => {
             <div className="brand-logo">
               <FaCodeBranch />
               <span style={{ marginLeft: "12px", fontSize: "22px" }}>
-                Eugene Butenko
+                <SplitText wordPoses={wordPoses} charPoses={charPoses}>
+                  Eugene Butenko
+                </SplitText>
               </span>
             </div>
+
             <ul className="right hide-on-med-and-down">
               <li>
-                <a href="#Main">
-                  <FaHome className="icon-button" />
-                </a>
+                <Box>
+                  <a href="#Main">
+                    <FaHome className="icon-button" />
+                  </a>
+                </Box>
               </li>
               <li>
-                <a href="#Skills">
-                  <FaGraduationCap className="icon-button" />
-                </a>
+                <Box>
+                  <a href="#Skills">
+                    <FaGraduationCap className="icon-button" />
+                  </a>
+                </Box>
               </li>
               <li>
-                <a href="#Projects">
-                  <FaDev className="icon-button" />
-                </a>
+                <Box>
+                  <a href="#Projects">
+                    <FaDev className="icon-button" />
+                  </a>
+                </Box>
               </li>
               <li>
-                <a href="#About">
-                  <FaUser className="icon-button" />
-                </a>
+                <Box>
+                  <a href="#About">
+                    <FaUser className="icon-button" />
+                  </a>
+                </Box>
               </li>
               <li style={{ marginRight: "20px" }}>
-                <a href="#Contact">
-                  <FaAddressCard className="icon-button" />
-                </a>
+                <Box>
+                  <a href="#Contact">
+                    <FaAddressCard className="icon-button" />
+                  </a>
+                </Box>
               </li>
             </ul>
           </div>
