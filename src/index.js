@@ -13,7 +13,7 @@ import Particles from "react-particles-js";
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
 const Fullpage = () => (
-  <>
+  <React.Fragment>
     <Navbar />
     <Footer />
     <Particles className="particles" />
@@ -33,7 +33,18 @@ const Fullpage = () => (
               <Skills />
             </div>
             <div className="section">
-              <p>Projects</p>
+              <div className="slide active">
+                <h1 className="white-text">Project 1</h1>
+              </div>
+              <div className="slide">
+                <h1 className="white-text">Project 2</h1>
+              </div>
+              <div className="slide">
+                <h1 className="white-text">Project 3</h1>
+              </div>
+              <div className="slide">
+                <h1 className="white-text">Mini Projects</h1>
+              </div>
             </div>
             <div className="section">
               <About />
@@ -45,7 +56,7 @@ const Fullpage = () => (
         );
       }}
     />
-  </>
+  </React.Fragment>
 );
 
 ReactDOM.render(<Fullpage />, document.getElementById("root"));

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Typist from "react-typist";
+import { FaArrowDown } from "react-icons/fa";
+import "./Main.css";
 
 class Main extends Component {
   state = {
@@ -29,8 +31,13 @@ class Main extends Component {
                   <Typist.Delay ms={1250} />
                   <br />
                   <Typist.Backspace count={60} delay={1000} />
-                  <br />{" "}
-                  <h5 className="center">Please scroll down to see more!</h5>
+                  <br /> <h5 className="center">Please scroll down!</h5>
+                  <Typist.Delay ms={100} />
+                  <h2 className="center pulsate-fwd">
+                    <a href="#Skills" className="pulsate-fwd">
+                      <FaArrowDown className="pulsate-fwd" />
+                    </a>
+                  </h2>
                   <Typist.Delay ms={100} />
                 </Typist>
               </div>

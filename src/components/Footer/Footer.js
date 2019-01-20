@@ -52,7 +52,7 @@ const FooterComponent = () => {
                 href="https://github.com/JoeVincentt"
                 rel="noopener noreferrer"
                 target="_blank"
-                style={{ marginRight: "10px" }}
+                style={{ marginRight: "20px" }}
               >
                 <FaGithub className="gitHub" />
               </a>
