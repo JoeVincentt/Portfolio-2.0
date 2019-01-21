@@ -9,6 +9,10 @@ import Main from "./components/Main/Main";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Particles from "react-particles-js";
+import ProjectOne from "./components/Projects/ProjectOne/ProjectOne";
+import ProjectTwo from "./components/Projects/ProjectTwo/ProjectTwo";
+import ProjectThree from "./components/Projects/ProjectThree/ProjectThree";
+import MiniProjects from "./components/Projects/MiniProjects/MiniProjects";
 
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
@@ -23,6 +27,8 @@ const Fullpage = () => (
       anchors={anchors}
       navigationTooltips={anchors}
       arrowNavigation
+      loopTop
+      loopBottom
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
@@ -34,16 +40,16 @@ const Fullpage = () => (
             </div>
             <div className="section">
               <div className="slide active">
-                <h1 className="white-text">Project 1</h1>
+                <ProjectOne />
               </div>
               <div className="slide">
-                <h1 className="white-text">Project 2</h1>
+                <ProjectTwo />
               </div>
               <div className="slide">
-                <h1 className="white-text">Project 3</h1>
+                <ProjectThree />
               </div>
               <div className="slide">
-                <h1 className="white-text">Mini Projects</h1>
+                <MiniProjects />
               </div>
             </div>
             <div className="section">

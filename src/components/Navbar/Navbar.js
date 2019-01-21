@@ -77,14 +77,14 @@ const NavbarComponent = () => (
           <ul className="right hide-on-med-and-down">
             <li>
               <Box>
-                <a href="#Main">
+                <a href="/#Main">
                   <FaHome className="icon-button" />
                 </a>
               </Box>
             </li>
             <li>
               <Box>
-                <a href="#Skills">
+                <a href="/#Skills">
                   <FaGraduationCap className="icon-button" />
                 </a>
               </Box>
