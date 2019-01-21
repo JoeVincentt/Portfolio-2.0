@@ -45,11 +45,11 @@ const Box = posed.div({
   },
   hover: {
     scale: 1.2,
-    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
+    boxShadow: "0px 5px 10px rgba(0,0,0,0.5)"
   },
   press: {
     scale: 1.1,
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
+    boxShadow: "0px 2px 5px rgba(0,0,0,0.4)"
   }
 });
 
@@ -63,7 +63,7 @@ const NavbarComponent = () => (
         className: "global-class-name"
       }}
     >
-      <nav className="transparent">
+      <nav className="transparent z-depth-0">
         <div className="nav-wrapper">
           <div className="brand-logo">
             <FaCodeBranch />
@@ -74,10 +74,10 @@ const NavbarComponent = () => (
             </span>
           </div>
 
-          <ul className="right hide-on-med-and-down">
+          <ul className="right hide-on-med-and-down z-depth-0">
             <li>
               <Box>
-                <a href="/#Main">
+                <a href="/#Main" className="atag">
                   <FaHome className="icon-button" />
                 </a>
               </Box>

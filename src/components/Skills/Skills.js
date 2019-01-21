@@ -25,7 +25,7 @@ class Skills extends Component {
       <div className="container center white-text " id="skills-box">
         <div className="row center">
           <div className="col m12 s10">
-            <div className="card transparent">
+            <div className="card transparent z-depth-0">
               <div className="container">
                 <div className="card-content skills-desc">
                   <p>
@@ -35,14 +35,14 @@ class Skills extends Component {
                   </p>
                 </div>
               </div>
-              <div className="card-tabs center">
+              <div className="card-tabs center z-depth-0">
                 <div className="container">
                   <ul
-                    className="tabs tabs-fixed-width transparent"
+                    className="tabs tabs-fixed-width transparent z-depth-0"
                     style={{ overflow: "visible" }}
                   >
                     <Box>
-                      <li className="tab" style={{ zIndex: "2000" }}>
+                      <li className="tab z-depth-0" style={{ zIndex: "2000" }}>
                         <a href="#ReactJS" className="active">
                           <img
                             className="skills-img"

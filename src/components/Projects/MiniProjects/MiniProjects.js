@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-materialize";
 import posed from "react-pose";
-import Typist from "react-typist";
+
 import "../../Skills/Skills.css";
 import "../Projects.css";
 import { IconContext } from "react-icons";
@@ -24,14 +24,7 @@ const Box = posed.div({
   }
 });
 
-let renderMsg = false;
-
-const onHeaderTyped = () => {
-  renderMsg = true;
-  return renderMsg;
-};
-
-const ProjectOne = () => {
+const MiniProjects = () => {
   return (
     <IconContext.Provider
       value={{
@@ -44,17 +37,7 @@ const ProjectOne = () => {
           <div className="row">
             <div className="col m12 s10">
               <Carousel
-                fixedItem={
-                  <Typist
-                    className=""
-                    avgTypingDelay={150}
-                    startDelay={3000}
-                    onTypingDone={onHeaderTyped}
-                    cursor={{ show: false }}
-                  >
-                    <h2 className="center">Project name</h2>
-                  </Typist>
-                }
+                fixedItem={<h2 className="center">Project name</h2>}
                 images={[
                   "https://lorempixel.com/800/400/food/1",
                   "https://lorempixel.com/800/400/food/2",
@@ -136,4 +119,4 @@ const ProjectOne = () => {
   );
 };
 
-export default ProjectOne;
+export default MiniProjects;

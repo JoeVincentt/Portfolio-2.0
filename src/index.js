@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
 import Particles from "react-particles-js";
 import ProjectOne from "./components/Projects/ProjectOne/ProjectOne";
 import ProjectTwo from "./components/Projects/ProjectTwo/ProjectTwo";
@@ -32,7 +33,7 @@ const Fullpage = () => (
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
-            <div className="section">
+            <div className="section" id="mainsection">
               <Main />
             </div>
             <div className="section">
@@ -56,7 +57,7 @@ const Fullpage = () => (
               <About />
             </div>
             <div className="section">
-              <p>Contact</p>
+              <Contact />
             </div>
           </ReactFullpage.Wrapper>
         );

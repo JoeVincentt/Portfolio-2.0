@@ -10,7 +10,6 @@
   }
 }
 
-.icon-button:hover,
-.icon-button.active {
+a:hover .icon-button {
   color: aqua !important;
 }
