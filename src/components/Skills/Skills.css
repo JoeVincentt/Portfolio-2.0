@@ -2,3 +2,42 @@
   background-color: #afafaf;
   /*Custom Color Of Indicator*/
 }
+
+.skills-img {
+  /* height: 25px !important; */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (min-width: 1215px) {
+  .skills-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 680px) {
+  #skills-box {
+    margin-top: auto;
+  }
+  .skills-desc {
+    margin-left: auto;
+  }
+  .skills-img {
+    height: 25px !important;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+@media (max-width: 390px) {
+  #skills-box {
+    margin-top: -70%;
+  }
+  .skills-desc {
+    margin-right: -20%;
+    margin-left: auto;
+  }
+  .skills-img {
+    height: 25px !important;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}

@@ -2,6 +2,18 @@ md-card .card {
   background-color: transparent !important;
 }
 
+@media (max-width: 483px) {
+  #mainpage {
+    margin-right: -15%;
+    margin-top: -60%;
+  }
+}
+@media (max-width: 600px) {
+  #mainpage {
+    margin-right: -15%;
+  }
+}
+
 .pulsate-fwd:hover {
   color: #91e9ff;
 }

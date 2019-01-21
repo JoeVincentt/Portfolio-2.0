@@ -14,7 +14,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container center" id="mainpage">
         <div className="row">
           <div className="col s7 m6 offset-m3">
             <div className="card transparent darken-1">
