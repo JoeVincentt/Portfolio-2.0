@@ -16,7 +16,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="container center white-text">
+      <div className="container center white-text" style={{ width: 700 }}>
         <div className="row">
           <div className="col s7 m6 offset-m3 offset-s2 center">
             <Tilt
