@@ -6,9 +6,9 @@ import { FaAt } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="container center white-text " style={{ width: 700 }}>
-        <div className="row ">
-          <div className="col s7 m6 offset-m3 offset-s2 center">
+      <div className="container center white-text ">
+        <div className="row">
+          <div className="col s7 m6 offset-m3 offset-s3 center">
             <Tilt
               className="Tilt"
               options={{ max: 25 }}
@@ -18,13 +18,13 @@ const About = () => {
                 {" "}
                 <div className="card  transparent white-text center z-depth-0">
                   <div className="card-image">
-                    <img src={contact} alt="avatar" />{" "}
+                    <img src={contact} alt="avatar" style={{ width: "100%" }} />{" "}
                   </div>
                 </div>
                 <div className="card-stacked">
                   <div className="card-content center">
-                    <h4>Contact Me</h4>
-                    <h5>
+                    <h5>Contact Me</h5>
+                    <div style={{ fontSize: "20px" }}>
                       <address>
                         Eugene Butenko
                         <br />
@@ -36,7 +36,7 @@ const About = () => {
                         <br />
                         USA
                       </address>
-                    </h5>
+                    </div>
                   </div>
                   <div className="card-action" />
                 </div>

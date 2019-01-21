@@ -28,13 +28,6 @@
   }
 }
 @media (max-width: 390px) {
-  #skills-box {
-    margin-top: -70%;
-  }
-  .skills-desc {
-    margin-right: -20%;
-    margin-left: auto;
-  }
   .skills-img {
     height: 25px !important;
     padding-left: 2px;

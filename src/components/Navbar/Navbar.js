@@ -65,7 +65,7 @@ const NavbarComponent = () => (
     >
       <nav className="transparent z-depth-0">
         <div className="nav-wrapper">
-          <div className="brand-logo">
+          <div className="brand-logo hide-on-med-and-down">
             <FaCodeBranch />
             <span style={{ marginLeft: "12px", fontSize: "22px" }}>
               <SplitText wordPoses={wordPoses} charPoses={charPoses}>
@@ -73,44 +73,47 @@ const NavbarComponent = () => (
               </SplitText>
             </span>
           </div>
-
-          <ul className="right hide-on-med-and-down z-depth-0">
-            <li>
-              <Box>
-                <a href="/#Main" className="atag">
-                  <FaHome className="icon-button" />
-                </a>
-              </Box>
-            </li>
-            <li>
-              <Box>
-                <a href="/#Skills">
-                  <FaGraduationCap className="icon-button" />
-                </a>
-              </Box>
-            </li>
-            <li>
-              <Box>
-                <a href="#Projects">
-                  <FaDev className="icon-button" />
-                </a>
-              </Box>
-            </li>
-            <li>
-              <Box>
-                <a href="#About">
-                  <FaUser className="icon-button" />
-                </a>
-              </Box>
-            </li>
-            <li style={{ marginRight: "20px" }}>
-              <Box>
-                <a href="#Contact">
-                  <FaAddressCard className="icon-button" />
-                </a>
-              </Box>
-            </li>
-          </ul>
+          <div className="row">
+            <div className="col s12 l12 m12 pull-s1">
+              <ul className="right  z-depth-0">
+                <li>
+                  <Box>
+                    <a href="/#Main" className="atag">
+                      <FaHome className="icon-button" />
+                    </a>
+                  </Box>
+                </li>
+                <li>
+                  <Box>
+                    <a href="/#Skills">
+                      <FaGraduationCap className="icon-button" />
+                    </a>
+                  </Box>
+                </li>
+                <li>
+                  <Box>
+                    <a href="#Projects">
+                      <FaDev className="icon-button" />
+                    </a>
+                  </Box>
+                </li>
+                <li>
+                  <Box>
+                    <a href="#About">
+                      <FaUser className="icon-button" />
+                    </a>
+                  </Box>
+                </li>
+                <li style={{ marginRight: "20px" }}>
+                  <Box>
+                    <a href="#Contact">
+                      <FaAddressCard className="icon-button" />
+                    </a>
+                  </Box>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </IconContext.Provider>

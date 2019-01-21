@@ -5,7 +5,15 @@
 
 @media (max-width: 992px) {
   .project-container-align {
-    margin-top: -30%;
-    margin-left: 12%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .margin-tab-md {
+  }
+}
+
+@media (max-width: 760px) {
+  .margin-tab-md {
   }
 }

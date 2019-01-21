@@ -29,10 +29,10 @@ const ProjectOne = () => {
         className: "global-class-name"
       }}
     >
-      <div className="container center project-container-align ">
+      <div className="container center project-container-align">
         <div className="container white-text">
           <div className="row">
-            <div className="col m12 s10">
+            <div className="col m12 s10 offset-s1">
               <Carousel
                 fixedItem={<h2 className="center">Project name</h2>}
                 images={[
@@ -43,17 +43,23 @@ const ProjectOne = () => {
                   "https://lorempixel.com/800/400/food/5"
                 ]}
               />
-              <div className="card transparent">
-                <div className="container" style={{ overflow: "hidden" }} />
-                <div className="container">
+              <div className="card transparent center">
+                <div
+                  className="container center"
+                  style={{ overflow: "hidden" }}
+                />
+                <div className="container center">
                   <div className="card-tabs center">
-                    <div className="container">
+                    <div className="col m12 s10 offset-s1 offset-m2">
                       <ul
-                        className="tabs tabs-fixed-width transparent"
+                        className="tabs tabs-fixed-width center margin-tab-md transparent"
                         style={{ overflow: "visible" }}
                       >
                         <Box>
-                          <li className="tab" style={{ zIndex: "2000" }}>
+                          <li
+                            className="tab center"
+                            style={{ zIndex: "2000", marginLeft: "15px" }}
+                          >
                             <a href="#Description" className="active">
                               <img
                                 src="images/Projects/info.png"
@@ -88,7 +94,7 @@ const ProjectOne = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="card-content transparent lighten-4">
+                  <div className="card-content transparent center lighten-4">
                     <div className="container center">
                       <div id="Description">Description</div>
                       <div id="Technology">Technology</div>
