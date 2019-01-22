@@ -18,7 +18,7 @@ const Box = posed.div({
   }
 });
 
-const ProjectThree = () => {
+const ProjectSeven = () => {
   return (
     <div className="container center-align">
       <IconContext.Provider
@@ -32,10 +32,9 @@ const ProjectThree = () => {
             <div className="center-align center">
               <div>
                 <Slider>
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/3.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/4.png" />
+                  <Slide src="images/Projects/ProjectsPictures/tesla/1.png" />
+                  <Slide src="images/Projects/ProjectsPictures/tesla/2.png" />
+                  <Slide src="images/Projects/ProjectsPictures/tesla/3.png" />
                 </Slider>
               </div>
             </div>
@@ -44,7 +43,7 @@ const ProjectThree = () => {
 
             <a
               className="pulsate-fwd"
-              href="https://github.com/JoeVincentt/StoryTeller-1.0"
+              href="https://github.com/JoeVincentt/TeslaRoadster"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -67,35 +66,25 @@ const ProjectThree = () => {
                 <div className="container">
                   {" "}
                   <Box>
-                    <li>
+                    <li className="z-depth-0">
                       <img
                         className="skills-img"
-                        src="images/Skills/nodejs.png"
-                        alt="NodeJS"
+                        src="images/Skills/bstudio.png"
+                        alt="bstudio"
                         style={{ height: "45px" }}
                       />
-                    </li>{" "}
+                    </li>
                   </Box>
                   <Box>
                     <li>
                       <img
                         className="skills-img"
-                        src="images/Skills/mongodbc.png"
-                        alt="MongoDB"
-                        style={{ height: "40px" }}
+                        src="images/Skills/css.png"
+                        alt="css"
+                        style={{ height: "60px" }}
                       />
                     </li>{" "}
                   </Box>
-                  <Box>
-                    <li>
-                      <img
-                        className="skills-img"
-                        src="images/Skills/handlebars.svg"
-                        alt="handlebars"
-                        style={{ height: "30px" }}
-                      />
-                    </li>{" "}
-                  </Box>{" "}
                 </div>
               </div>{" "}
             </ul>
@@ -106,4 +95,4 @@ const ProjectThree = () => {
   );
 };
 
-export default ProjectThree;
+export default ProjectSeven;

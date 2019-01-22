@@ -18,7 +18,7 @@ const Box = posed.div({
   }
 });
 
-const ProjectThree = () => {
+const ProjectFive = () => {
   return (
     <div className="container center-align">
       <IconContext.Provider
@@ -32,10 +32,10 @@ const ProjectThree = () => {
             <div className="center-align center">
               <div>
                 <Slider>
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/3.png" />
-                  <Slide src="images/Projects/ProjectsPictures/storyteller/4.png" />
+                  <Slide src="images/Projects/ProjectsPictures/brewerystore/1.png" />
+                  <Slide src="images/Projects/ProjectsPictures/brewerystore/2.png" />
+                  <Slide src="images/Projects/ProjectsPictures/brewerystore/3.png" />
+                  <Slide src="images/Projects/ProjectsPictures/brewerystore/4.png" />
                 </Slider>
               </div>
             </div>
@@ -44,7 +44,7 @@ const ProjectThree = () => {
 
             <a
               className="pulsate-fwd"
-              href="https://github.com/JoeVincentt/StoryTeller-1.0"
+              href="https://github.com/JoeVincentt/brewerystore"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -67,14 +67,14 @@ const ProjectThree = () => {
                 <div className="container">
                   {" "}
                   <Box>
-                    <li>
+                    <li className="z-depth-0">
                       <img
                         className="skills-img"
-                        src="images/Skills/nodejs.png"
-                        alt="NodeJS"
+                        src="images/Skills/react.png"
+                        alt="ReactJS"
                         style={{ height: "45px" }}
                       />
-                    </li>{" "}
+                    </li>
                   </Box>
                   <Box>
                     <li>
@@ -84,15 +84,45 @@ const ProjectThree = () => {
                         alt="MongoDB"
                         style={{ height: "40px" }}
                       />
+                    </li>
+                  </Box>
+                  <Box>
+                    <li>
+                      <img
+                        className="skills-img"
+                        src="images/Skills/strapi.png"
+                        alt="strapi"
+                        style={{ height: "40px" }}
+                      />
                     </li>{" "}
                   </Box>
                   <Box>
                     <li>
                       <img
                         className="skills-img"
-                        src="images/Skills/handlebars.svg"
-                        alt="handlebars"
-                        style={{ height: "30px" }}
+                        src="images/Skills/stripe.png"
+                        alt="stripe"
+                        style={{ width: "60px" }}
+                      />
+                    </li>{" "}
+                  </Box>
+                  <Box>
+                    <li>
+                      <img
+                        className="skills-img"
+                        src="images/Skills/pinterest.png"
+                        alt="pinterest"
+                        style={{ height: "45px" }}
+                      />
+                    </li>{" "}
+                  </Box>
+                  <Box>
+                    <li>
+                      <img
+                        className="skills-img"
+                        src="images/Skills/graphql.png"
+                        alt="GraphQL"
+                        style={{ height: "40px" }}
                       />
                     </li>{" "}
                   </Box>{" "}
@@ -106,4 +136,4 @@ const ProjectThree = () => {
   );
 };
 
-export default ProjectThree;
+export default ProjectFive;
