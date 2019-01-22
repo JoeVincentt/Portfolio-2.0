@@ -1,6 +1,6 @@
 import React from "react";
-import { Slider, Slide } from "react-materialize";
 import posed from "react-pose";
+import Slider from "react-slick";
 
 import { IconContext } from "react-icons";
 
@@ -18,6 +18,14 @@ const Box = posed.div({
   }
 });
 
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+
 const ProjectSeven = () => {
   return (
     <div className="container center-align">
@@ -30,13 +38,23 @@ const ProjectSeven = () => {
         <div className="row">
           <div className="col s12 m9 l9">
             <div className="center-align center">
-              <div>
-                <Slider>
-                  <Slide src="images/Projects/ProjectsPictures/tesla/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/tesla/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/tesla/3.png" />
-                </Slider>
-              </div>
+              <Slider {...settings}>
+                <img
+                  src="images/Projects/ProjectsPictures/tesla/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/tesla/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/tesla/3.png"
+                  alt=""
+                  className="responsive-img"
+                />
+              </Slider>
             </div>
 
             <h5 className="white-text">Check out code </h5>

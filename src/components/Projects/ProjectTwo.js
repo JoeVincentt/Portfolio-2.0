@@ -1,8 +1,15 @@
 import React from "react";
-import { Slider, Slide } from "react-materialize";
 import posed from "react-pose";
-
 import { IconContext } from "react-icons";
+import Slider from "react-slick";
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 const Box = posed.div({
   hoverable: true,
@@ -30,14 +37,28 @@ const ProjectTwo = () => {
         <div className="row">
           <div className="col s12 m9 l9">
             <div className="center-align center">
-              <div>
-                <Slider>
-                  <Slide src="images/Projects/ProjectsPictures/clientpanel/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/clientpanel/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/clientpanel/3.png" />
-                  <Slide src="images/Projects/ProjectsPictures/clientpanel/4.png" />
-                </Slider>
-              </div>
+              <Slider {...settings}>
+                <img
+                  src="images/Projects/ProjectsPictures/clientpanel/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/clientpanel/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/clientpanel/3.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/clientpanel/4.png"
+                  alt=""
+                  className="responsive-img"
+                />
+              </Slider>
             </div>
 
             <h5 className="white-text">Check out code </h5>

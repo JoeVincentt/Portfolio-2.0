@@ -10,10 +10,16 @@
    Custom Color Of Indicator
 } */
 
-.slider .slides li img {
+/* .slider .slides li img {
   height: 100%;
   width: auto !important;
   background-size: cover;
   background-color: #00000000 !important;
   background-position: center;
-}
+} */
+/* 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+} */

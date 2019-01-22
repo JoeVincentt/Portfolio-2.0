@@ -1,8 +1,16 @@
 import React from "react";
-import { Slider, Slide } from "react-materialize";
 import posed from "react-pose";
 
 import { IconContext } from "react-icons";
+import Slider from "react-slick";
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 const Box = posed.div({
   hoverable: true,
@@ -83,20 +91,58 @@ const MiniProjects = () => {
           </div>
           <div className="col s12 m6 l6">
             <div className="center-align center">
-              <div>
-                <Slider>
-                  <Slide src="images/Projects/ProjectsPictures/contactmanager.png" />
-                  <Slide src="images/Projects/ProjectsPictures/spacex.png" />
-                  <Slide src="images/Projects/ProjectsPictures/facefinder/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/facefinder/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/githubfinder/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/githubfinder/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/weather/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/weather/2.png" />
-                  <Slide src="images/Projects/ProjectsPictures/calorietracker/1.png" />
-                  <Slide src="images/Projects/ProjectsPictures/calorietracker/2.png" />
-                </Slider>
-              </div>
+              <Slider {...settings}>
+                <img
+                  src="images/Projects/ProjectsPictures/contactmanager.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/spacex.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/facefinder/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/facefinder/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/githubfinder/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/githubfinder/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/weather/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/weather/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/calorietracker/1.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/calorietracker/2.png"
+                  alt=""
+                  className="responsive-img"
+                />
+              </Slider>
             </div>
 
             <h5 className="white-text">Check out code </h5>
