@@ -2,8 +2,6 @@ import React from "react";
 import { Slider, Slide } from "react-materialize";
 import posed from "react-pose";
 
-import "../../Skills/Skills.css";
-import "../Projects.css";
 import { IconContext } from "react-icons";
 
 const Box = posed.div({
@@ -32,20 +30,27 @@ const ProjectOne = () => {
         <div className="center-align center">
           <Slider>
             <Slide
-              src="images/Projects/ProjectsPictures/spacex.png"
+              src="images/Projects/ProjectsPictures/recipes/1.png"
               title="This is our big Tagline!"
             >
-              <Box>Center Text</Box>
+              Center Text
             </Slide>
             <Slide
-              src="http://lorempixel.com/580/250/nature/2"
+              src="images/Projects/ProjectsPictures/recipes/2.png"
               title="Left aligned Caption"
               placement="left"
             >
               <div className="left-align">Text on the left</div>
             </Slide>
             <Slide
-              src="http://lorempixel.com/580/250/nature/3"
+              src="images/Projects/ProjectsPictures/recipes/3.png"
+              title="Right aligned Caption"
+              placement="right"
+            >
+              Text on Right
+            </Slide>
+            <Slide
+              src="images/Projects/ProjectsPictures/recipes/4.png"
               title="Right aligned Caption"
               placement="right"
             >

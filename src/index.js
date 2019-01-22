@@ -10,10 +10,10 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Particles from "react-particles-js";
-import ProjectOne from "./components/Projects/ProjectOne/ProjectOne";
-import ProjectTwo from "./components/Projects/ProjectTwo/ProjectTwo";
-import ProjectThree from "./components/Projects/ProjectThree/ProjectThree";
-import MiniProjects from "./components/Projects/MiniProjects/MiniProjects";
+import ProjectOne from "./components/Projects/ProjectOne";
+import ProjectTwo from "./components/Projects/ProjectTwo";
+import ProjectThree from "./components/Projects/ProjectThree";
+import MiniProjects from "./components/Projects/MiniProjects";
 
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
