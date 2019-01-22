@@ -19,83 +19,144 @@ const Box = posed.div({
 class Skills extends Component {
   render() {
     return (
-      <div className="container center white-text " id="skills-box">
+      <div className="container center white-text">
         <div className="row center">
-          <div className="col m12 s10">
+          <div className="col m12 s12 l12 ">
             <div className="card transparent z-depth-0">
               <div className="container">
                 <div className="card-content skills-desc">
-                  <p>
+                  <h5>
                     Showing your passion for technology if you DON’T have a tech
                     background You might think that if you don’t have a
                     technology-related degree, don’t have the latest smartphone
-                  </p>
-                </div>
-              </div>
-              <div className="card-tabs center z-depth-0">
-                <div className="container">
-                  <ul
-                    className="tabs tabs-fixed-width transparent z-depth-0"
-                    style={{ overflow: "visible" }}
-                  >
-                    <Box>
-                      <li className="tab z-depth-0" style={{ zIndex: "2000" }}>
-                        <a href="#ReactJS" className="active">
-                          <img
-                            className="skills-img"
-                            src="images/Skills/react.png"
-                            alt="ReactJS"
-                            style={{ height: "45px" }}
-                          />
-                        </a>
-                      </li>
-                    </Box>
-                    <Box>
-                      <li className="tab">
-                        <a href="#MongoDB">
-                          <img
-                            className="skills-img"
-                            src="images/Skills/mongodbc.png"
-                            alt="MongoDB"
-                            style={{ height: "40px" }}
-                          />
-                        </a>
-                      </li>{" "}
-                    </Box>
-
-                    <Box>
-                      <li className="tab">
-                        <a href="#NodeJS">
-                          <img
-                            className="skills-img"
-                            src="images/Skills/nodejs.png"
-                            alt="NodeJS"
-                            style={{ height: "45px" }}
-                          />
-                        </a>
-                      </li>{" "}
-                    </Box>
-                    <Box>
-                      <li className="tab">
-                        <a href="#GraphQL">
-                          <img
-                            className="skills-img"
-                            src="images/Skills/graphql.png"
-                            alt="GraphQL"
-                            style={{ height: "40px" }}
-                          />
-                        </a>
-                      </li>{" "}
-                    </Box>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-content transparent lighten-4">
-                <div className="container center skills-desc">
-                  <div id="ReactJS">React</div>
-                  <div id="GraphQL">GraphQL</div>
-                  <div id="MongoDB">MongoDB</div>
-                  <div id="NodeJS">NodeJS</div>
+                  </h5>
+                  <div className="divider" />
+                  <div className="container center">
+                    <div className="row">
+                      <div className="col s6 m6 l6">
+                        <ul
+                          className="transparent center row z-depth-0"
+                          style={{ overflow: "visible" }}
+                        >
+                          <div className="valign-wrapper">
+                            {" "}
+                            <div className="container">
+                              {" "}
+                              <Box>
+                                <li className="z-depth-0">
+                                  <a href="#ReactJS" className="active">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/react.png"
+                                      alt="ReactJS"
+                                      style={{ height: "45px" }}
+                                    />
+                                  </a>
+                                </li>
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#MongoDB">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/mongodbc.png"
+                                      alt="MongoDB"
+                                      style={{ height: "40px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#NodeJS">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/nodejs.png"
+                                      alt="NodeJS"
+                                      style={{ height: "45px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#GraphQL">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/graphql.png"
+                                      alt="GraphQL"
+                                      style={{ height: "40px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>{" "}
+                            </div>
+                          </div>{" "}
+                        </ul>
+                      </div>
+                      <div className="col s6 m6 l6">
+                        <ul
+                          className="transparent center row z-depth-0"
+                          style={{ overflow: "visible" }}
+                        >
+                          <div className="valign-wrapper">
+                            {" "}
+                            <div className="container">
+                              {" "}
+                              <Box>
+                                <li className="z-depth-0">
+                                  <a href="#ReactJS" className="active">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/react.png"
+                                      alt="ReactJS"
+                                      style={{ height: "45px" }}
+                                    />
+                                  </a>
+                                </li>
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#MongoDB">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/mongodbc.png"
+                                      alt="MongoDB"
+                                      style={{ height: "40px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#NodeJS">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/nodejs.png"
+                                      alt="NodeJS"
+                                      style={{ height: "45px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>
+                              <Box>
+                                <li className="">
+                                  <a href="#GraphQL">
+                                    <img
+                                      className="skills-img"
+                                      src="images/Skills/graphql.png"
+                                      alt="GraphQL"
+                                      style={{ height: "40px" }}
+                                    />
+                                  </a>
+                                </li>{" "}
+                              </Box>{" "}
+                            </div>
+                          </div>{" "}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
