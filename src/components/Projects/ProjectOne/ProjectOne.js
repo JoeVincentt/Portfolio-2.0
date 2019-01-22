@@ -1,11 +1,10 @@
 import React from "react";
-import { Carousel } from "react-materialize";
+import { Slider, Slide } from "react-materialize";
 import posed from "react-pose";
 
 import "../../Skills/Skills.css";
 import "../Projects.css";
 import { IconContext } from "react-icons";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Box = posed.div({
   hoverable: true,
@@ -23,184 +22,52 @@ const Box = posed.div({
 
 const ProjectOne = () => {
   return (
-    // <IconContext.Provider
-    //   value={{
-    //     size: "30px",
-    //     className: "global-class-name"
-    //   }}
-    // >
-    //   <div className="container center project-container-align">
-    //     <div className="container white-text">
-    //       <div className="row">
-    //         <div className="col m12 s10 offset-s1">
-    //           <Carousel
-    //             fixedItem={<h2 className="center">Project name</h2>}
-    //             images={[
-    //               "https://lorempixel.com/800/400/food/1",
-    //               "https://lorempixel.com/800/400/food/2",
-    //               "https://lorempixel.com/800/400/food/3",
-    //               "https://lorempixel.com/800/400/food/4",
-    //               "https://lorempixel.com/800/400/food/5"
-    //             ]}
-    //           />
-    //           <div className="card transparent center">
-    //             <div
-    //               className="container center"
-    //               style={{ overflow: "hidden" }}
-    //             />
-    //             <div className="container center">
-    //               <div className="card-tabs center">
-    //                 <div className="col m12 s10 offset-s1 offset-m2">
-    //                   <ul
-    //                     className="tabs tabs-fixed-width center margin-tab-md transparent"
-    //                     style={{ overflow: "visible" }}
-    //                   >
-    //                     <Box>
-    //                       <li
-    //                         className="tab center"
-    //                         style={{ zIndex: "2000", marginLeft: "15px" }}
-    //                       >
-    //                         <a href="#Description" className="active">
-    //                           <img
-    //                             src="images/Projects/info.png"
-    //                             alt="Description"
-    //                             style={{ width: "45px" }}
-    //                           />
-    //                         </a>
-    //                       </li>
-    //                     </Box>
-    //                     <Box>
-    //                       <li className="tab">
-    //                         <a href="#Technology">
-    //                           <img
-    //                             src="images/Projects/tools.png"
-    //                             alt="Technology"
-    //                             style={{ height: "40px" }}
-    //                           />
-    //                         </a>
-    //                       </li>{" "}
-    //                     </Box>
-    //                     <Box>
-    //                       <li className="tab">
-    //                         <a href="#Github">
-    //                           <img
-    //                             src="images/Projects/github.png"
-    //                             alt="Github"
-    //                             style={{ height: "45px" }}
-    //                           />
-    //                         </a>
-    //                       </li>{" "}
-    //                     </Box>
-    //                   </ul>
-    //                 </div>
-    //               </div>
-    //               <div className="card-content transparent center lighten-4">
-    //                 <div className="container center">
-    //                   <div id="Description">Description</div>
-    //                   <div id="Technology">Technology</div>
-    //                   <div id="Github">
-    //                     <h5>Check out code </h5>
-    //                     <a
-    //                       className="pulsate-fwd"
-    //                       href="https://github.com/JoeVincentt"
-    //                       rel="noopener noreferrer"
-    //                       target="_blank"
-    //                     >
-    //                       {" "}
-    //                       <FaArrowAltCircleRight className="pulsate-fwd" />
-    //                     </a>
-    //                   </div>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </IconContext.Provider>
-    <div className="container center-align" style={{ marginTop: "-200px" }}>
+    <div className="container center-align">
       <IconContext.Provider
         value={{
           size: "30px",
           className: "global-class-name"
         }}
       >
-        <div className="container">
-          <div className="container  white-text">
-            <div className="row">
-              <div className="col m12 s12 l12">
-                <Carousel
-                  className="center-align"
-                  fixedItem={<h2 className="center">Project name</h2>}
-                  images={[
-                    "https://lorempixel.com/800/400/food/1",
-                    "https://lorempixel.com/800/400/food/2",
-                    "https://lorempixel.com/800/400/food/3",
-                    "https://lorempixel.com/800/400/food/4",
-                    "https://lorempixel.com/800/400/food/5"
-                  ]}
-                />
-                <div className="container transparent center-align center ">
-                  <div className="card-tabs center-align offset-m4 project-container-align">
-                    <ul className="tabs tabs-fixed-width center-align center  transparent">
-                      <Box>
-                        <li className="tab center">
-                          <a href="#Description" className="active">
-                            <img
-                              src="images/Projects/info.png"
-                              alt="Description"
-                              style={{ width: "45px" }}
-                            />
-                          </a>
-                        </li>
-                      </Box>
-                      <Box>
-                        <li className="tab">
-                          <a href="#Technology">
-                            <img
-                              src="images/Projects/tools.png"
-                              alt="Technology"
-                              style={{ height: "40px" }}
-                            />
-                          </a>
-                        </li>{" "}
-                      </Box>
-                      <Box>
-                        <li className="tab">
-                          <a href="#Github">
-                            <img
-                              src="images/Projects/github.png"
-                              alt="Github"
-                              style={{ height: "45px" }}
-                            />
-                          </a>
-                        </li>{" "}
-                      </Box>
-                    </ul>
-                  </div>
-                  <div className="card-content transparent center lighten-4">
-                    <div className="center-align">
-                      <div id="Description">Description</div>
-                      <div id="Technology">Technology</div>
-                      <div id="Github">
-                        <h5>Check out code </h5>
-                        <a
-                          className="pulsate-fwd"
-                          href="https://github.com/JoeVincentt"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {" "}
-                          <FaArrowAltCircleRight className="pulsate-fwd" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="center-align center">
+          <Slider>
+            <Slide
+              src="images/Projects/ProjectsPictures/spacex.png"
+              title="This is our big Tagline!"
+            >
+              <Box>Center Text</Box>
+            </Slide>
+            <Slide
+              src="http://lorempixel.com/580/250/nature/2"
+              title="Left aligned Caption"
+              placement="left"
+            >
+              <div className="left-align">Text on the left</div>
+            </Slide>
+            <Slide
+              src="http://lorempixel.com/580/250/nature/3"
+              title="Right aligned Caption"
+              placement="right"
+            >
+              Text on Right
+            </Slide>
+          </Slider>
+          <h5 className="white-text">Check out code </h5>
+
+          <a
+            className="pulsate-fwd"
+            href="https://github.com/JoeVincentt"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <img
+              src="images/Projects/github.png"
+              alt="Github"
+              style={{ width: "50px", cursor: "pointer" }}
+              className="pulsate-fwd"
+            />
+          </a>
         </div>
       </IconContext.Provider>
     </div>

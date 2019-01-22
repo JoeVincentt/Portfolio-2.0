@@ -1,4 +1,4 @@
-.carousel .carousel-item > img {
+/* .carousel .carousel-item > img {
   width: 260%;
   margin-left: -80%;
   margin-bottom: 10px !important;
@@ -7,23 +7,5 @@
 
 .tabs .indicator {
   background-color: #afafaf;
-  /* Custom Color Of Indicator*/
-}
-
-@media (max-width: 990px) {
-  .project-container-align {
-    margin-left: 25%;
-  }
-}
-
-@media (max-width: 320px) {
-  .project-container-align {
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 1592px) {
-  .project-container-align {
-    margin-left: 20%;
-  }
-} /**/
+   Custom Color Of Indicator
+} */
