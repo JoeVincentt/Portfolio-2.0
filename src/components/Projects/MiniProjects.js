@@ -172,16 +172,6 @@ const MiniProjects = () => {
                 <div className="container">
                   {" "}
                   <Box>
-                    <li className="z-depth-0">
-                      <img
-                        className="skills-img"
-                        src="images/Skills/css.png"
-                        alt="ReactJS"
-                        style={{ height: "60px" }}
-                      />
-                    </li>
-                  </Box>
-                  <Box>
                     <li>
                       <img
                         className="skills-img"
@@ -190,6 +180,16 @@ const MiniProjects = () => {
                         style={{ height: "40px" }}
                       />
                     </li>{" "}
+                  </Box>
+                  <Box>
+                    <li className="z-depth-0">
+                      <img
+                        className="skills-img"
+                        src="images/Skills/css.png"
+                        alt="ReactJS"
+                        style={{ height: "60px" }}
+                      />
+                    </li>
                   </Box>
                   <Box>
                     <li>
