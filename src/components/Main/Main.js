@@ -16,7 +16,7 @@ class Main extends Component {
     return (
       <div className="container center" id="mainpage">
         <div className="row">
-          <div className="col s7 m6 offset-m3">
+          <div className="col s9 m6 offset-m3 pull-s1">
             <div className="card transparent z-depth-0">
               <div className="card-content white-text">
                 <Typist

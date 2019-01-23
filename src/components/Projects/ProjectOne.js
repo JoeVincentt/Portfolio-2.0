@@ -92,7 +92,7 @@ const ProjectOne = () => {
                     <li className="z-depth-0">
                       <img
                         className="skills-img"
-                        src="images/Skills/react.png"
+                        src="images/Skills/reactx.png"
                         alt="ReactJS"
                         style={{ height: "45px" }}
                       />

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Skills.css";
 import posed from "react-pose";
 
 const Box = posed.div({
@@ -19,7 +18,7 @@ const Box = posed.div({
 class Skills extends Component {
   render() {
     return (
-      <div className="container center white-text">
+      <div className="container center white-text" style={{ marginTop: "5%" }}>
         <div className="row">
           <div className="col s12 m12 l12">
             <div
@@ -151,7 +150,7 @@ class Skills extends Component {
                                       <li className="z-depth-0">
                                         <img
                                           className="skills-img"
-                                          src="images/Skills/react.png"
+                                          src="images/Skills/reactx.png"
                                           alt="ReactJS"
                                           style={{ height: "45px" }}
                                         />

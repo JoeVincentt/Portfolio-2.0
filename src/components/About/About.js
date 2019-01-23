@@ -18,7 +18,10 @@ class About extends Component {
 
   render() {
     return (
-      <div className="container center-align white-text">
+      <div
+        className="container center-align white-text"
+        style={{ overflow: "visible" }}
+      >
         <div className="row">
           <div className="col s12 m12 l12">
             <div

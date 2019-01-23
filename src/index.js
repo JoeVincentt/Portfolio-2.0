@@ -36,8 +36,8 @@ const Fullpage = () => (
       navigationTooltips={anchors}
       arrowNavigation
       touchSensitivity
-      loopTop
-      loopBottom
+      // loopTop
+      // loopBottom
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
