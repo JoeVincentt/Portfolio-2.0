@@ -28,25 +28,26 @@ const Fullpage = () => (
   <React.Fragment>
     <Navbar />
     <Footer />
-    {/* <Particles className="particles" /> */}
+    <Particles className="particles" />
     <ReactFullpage
       licenseKey={license}
       navigation
       anchors={anchors}
       navigationTooltips={anchors}
       arrowNavigation
+      touchSensitivity
       loopTop
       loopBottom
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
-            <div className="section container center">
+            <div className="section  container center">
               <Main />
             </div>
-            <div className="section container center">
+            <div className="section  container center">
               <Skills />
             </div>
-            <div className="section  center">
+            <div className="section   center">
               <div className="slide ">
                 <ProjectOne />
               </div>

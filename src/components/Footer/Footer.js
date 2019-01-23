@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+
 import { Footer } from "react-fullpage";
 import { IconContext } from "react-icons";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -41,7 +42,6 @@ const FooterComponent = () => {
                 href="https://www.linkedin.com/in/yevhenii-butenko/"
                 rel="noopener noreferrer"
                 target="_blank"
-                style={{ margin: "10px" }}
               >
                 {" "}
                 <FaLinkedinIn className="linkedIn" />
@@ -52,12 +52,11 @@ const FooterComponent = () => {
                 href="https://github.com/JoeVincentt"
                 rel="noopener noreferrer"
                 target="_blank"
-                style={{ marginRight: "20px" }}
               >
                 <FaGithub className="gitHub" />
               </a>
             </Box>
-          </div>
+          </div>{" "}
         </footer>
       </IconContext.Provider>
     </Footer>

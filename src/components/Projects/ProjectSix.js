@@ -35,7 +35,7 @@ const ProjectSix = () => {
         }}
       >
         <div className="row">
-          <div className="col s12 m9 l9">
+          <div className="col s10 m9 l9 offset-s1">
             <div className="center-align center">
               <Slider {...settings}>
                 <img

@@ -4,3 +4,7 @@
 .gitHub:hover {
   color: plum !important;
 }
+
+.gitHub {
+  margin: 15px;
+}

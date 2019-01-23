@@ -89,7 +89,7 @@ const MiniProjects = () => {
               </div>{" "}
             </ul>
           </div>
-          <div className="col s12 m6 l6">
+          <div className="col s10 m6 l6 offset-s1">
             <div className="center-align center">
               <Slider {...settings}>
                 <img

@@ -26,12 +26,16 @@ class Main extends Component {
                   onTypingDone={this.onHeaderTyped}
                   cursor={{ show: false }}
                 >
-                  <h2 className="center">Hey, Eugene is Here!</h2>
-                  <h5 className="center">Thank You For Visiting!</h5>
+                  <h2 className="center">Welcome</h2> <Typist.Delay ms={500} />
+                  <Typist.Backspace count={8} delay={700} />
+                  <h5 className="center">My name is Eugene</h5>
+                  <Typist.Delay ms={1250} />
+                  <h5 className="center">and I am Fullstack Web Developer</h5>
                   <Typist.Delay ms={1250} />
                   <br />
                   <Typist.Backspace count={60} delay={1000} />
-                  <br /> <h5 className="center">Please scroll down!</h5>
+                  <br />
+                  <h5 className="center">See more...</h5>
                   <Typist.Delay ms={100} />
                   <h2 className="center pulsate-fwd">
                     <a href="#Skills" className="pulsate-fwd">
