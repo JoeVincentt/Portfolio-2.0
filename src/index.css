@@ -8,7 +8,7 @@ body {
   background: url("./back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Indie+Flower";
+  font-family: "Aleo";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -128,20 +128,20 @@ body {
   .fp-controlArrow.fp-next {
     right: 20px;
     border-width: 20.5px 0 20.5px 18px;
-    border-color: transparent transparent transparent #811b1b;
+    border-color: transparent transparent transparent #919191;
   }
   .fp-controlArrow.fp-prev {
     left: 20px;
     width: 0;
     border-width: 20.5px 18px 20.5px 0;
-    border-color: transparent #811b1b transparent transparent;
+    border-color: transparent #919191 transparent transparent;
   }
 
   .fp-controlArrow.fp-next:hover {
-    border-color: transparent transparent transparent #c72e2e;
+    border-color: transparent transparent transparent #b3b2b2;
   }
   .fp-controlArrow.fp-prev:hover {
-    border-color: transparent #c72e2e transparent transparent;
+    border-color: transparent #b3b2b2 transparent transparent;
   }
 }
 
