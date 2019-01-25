@@ -20,8 +20,7 @@ class Main extends Component {
             <div className="card transparent z-depth-0">
               <div className="card-content white-text">
                 <Typist
-                  className=""
-                  avgTypingSpeed={40}
+                  avgTypingDelay={60}
                   startDelay={2000}
                   onTypingDone={this.onHeaderTyped}
                   cursor={{ show: false }}
@@ -29,9 +28,11 @@ class Main extends Component {
                   <h2 className="center">Welcome</h2> <Typist.Delay ms={500} />
                   <Typist.Backspace count={8} delay={700} />
                   <h5 className="center">My name is Eugene</h5>
-                  <Typist.Delay ms={1250} />
-                  <h5 className="center">and I am Fullstack Web Developer</h5>
-                  <Typist.Delay ms={1250} />
+                  <Typist.Delay ms={500} />
+                  <h5 className="center">and I am </h5>
+                  <Typist.Delay ms={500} />
+                  <h5 className="center">A Fullstack Web Developer</h5>
+                  <Typist.Delay ms={500} />
                   <br />
                   <Typist.Backspace count={60} delay={1000} />
                   <br />

@@ -81,7 +81,7 @@ class About extends Component {
                                 programming "Python: for absolute beginners", I
                                 fell in love with programming. It was a quite
                                 long way till I got to Web Development, i
-                                certenely knew I love doing this, but so many
+                                certainly knew I love doing this, but so many
                                 ways to use programming... Learned very basics
                                 of few languages and decided to stay in Web Dev.
                                 Something what we use everyday and something
