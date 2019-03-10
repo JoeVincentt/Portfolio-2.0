@@ -25,8 +25,13 @@ class Main extends Component {
                   onTypingDone={this.onHeaderTyped}
                   cursor={{ show: false }}
                 >
-                  <h2 className="center">Welcome</h2> <Typist.Delay ms={500} />
-                  <Typist.Backspace count={8} delay={700} />
+                  <h4
+                    className="center-align"
+                    style={{ fontFamily: "Indie+Flower" }}
+                  >
+                    Welcome!
+                  </h4>{" "}
+                  <Typist.Delay ms={500} />
                   <h5 className="center">My name is Eugene</h5>
                   <Typist.Delay ms={500} />
                   <h5 className="center">and I am </h5>
@@ -34,10 +39,6 @@ class Main extends Component {
                   <h5 className="center">A Fullstack Web Developer</h5>
                   <Typist.Delay ms={500} />
                   <br />
-                  <Typist.Backspace count={60} delay={1000} />
-                  <br />
-                  <h5 className="center">See more...</h5>
-                  <Typist.Delay ms={100} />
                   <h2 className="center pulsate-fwd">
                     <a href="#Skills" className="pulsate-fwd">
                       <FaArrowDown className="pulsate-fwd" />

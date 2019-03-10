@@ -60,23 +60,24 @@ const ProjectTwo = () => {
                 />
               </Slider>
             </div>
+            <div style={{ marginTop: "40px" }}>
+              <h5 className="white-text">Check out code </h5>
 
-            <h5 className="white-text">Check out code </h5>
-
-            <a
-              className="pulsate-fwd"
-              href="https://github.com/JoeVincentt/client_panel_firebase_react"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {" "}
-              <img
-                src="images/Projects/github.png"
-                alt="Github"
-                style={{ width: "50px", cursor: "pointer" }}
+              <a
                 className="pulsate-fwd"
-              />
-            </a>
+                href="https://github.com/JoeVincentt/client_panel_firebase_react"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                <img
+                  src="images/Projects/github.png"
+                  alt="Github"
+                  style={{ width: "50px", cursor: "pointer" }}
+                  className="pulsate-fwd"
+                />
+              </a>
+            </div>
           </div>{" "}
           <div className="col  m3 l3 hide-on-small-only">
             <ul

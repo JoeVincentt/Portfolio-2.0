@@ -9,7 +9,7 @@ import { license } from "./keys";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
-import About from "./components/About/About";
+// import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Particles from "react-particles-js";
@@ -20,7 +20,7 @@ import ProjectFour from "./components/Projects/ProjectFour";
 import ProjectFive from "./components/Projects/ProjectFive";
 import ProjectSix from "./components/Projects/ProjectSix";
 import ProjectSeven from "./components/Projects/ProjectSeven";
-import MiniProjects from "./components/Projects/MiniProjects";
+// import MiniProjects from "./components/Projects/MiniProjects";
 
 const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
 
@@ -69,13 +69,13 @@ const Fullpage = () => (
               <div className="slide active">
                 <ProjectSeven />
               </div>
-              <div className="slide">
+              {/* <div className="slide">
                 <MiniProjects />
-              </div>
+              </div> */}
             </div>
-            <div className="section container center">
+            {/* <div className="section container center">
               <About />
-            </div>
+            </div> */}
             <div className="section container center">
               <Contact />
             </div>

@@ -23,3 +23,27 @@
   height: auto;
   vertical-align: middle;
 } */
+
+.productSlider {
+  width: 50% !important;
+  margin: 0 auto !important;
+  padding-bottom: 30px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  font-size: 10px !important;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+/* .slick-slide {
+    padding: 0px 75px;
+  }
+
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+  } */

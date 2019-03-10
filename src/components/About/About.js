@@ -42,58 +42,33 @@ class About extends Component {
             <div className="col s12 m11 l11">
               <div className="row center">
                 <div className="col s10 m6 offset-m3 offset-s1 center ">
-                  <IconContext.Provider
-                    value={{
-                      size: "20%",
-                      className: "global-class-name"
-                    }}
-                  >
-                    <Tilt
-                      className="Tilt"
-                      options={{ max: 25 }}
-                      style={{ height: 450, width: "auto" }}
+                  <div className="container">
+                    <IconContext.Provider
+                      value={{
+                        size: "20%",
+                        className: "global-class-name"
+                      }}
                     >
-                      <div className="Tilt-inner">
-                        {" "}
-                        <div
-                          className="card  transparent white-text center z-depth-0"
-                          onMouseEnter={this.onMouseEnter}
-                          onMouseLeave={this.onMouseLeave}
-                        >
-                          <div className="card-image">
-                            {" "}
-                            <img
-                              src={avatar}
-                              alt="avatar"
-                              style={{ width: "100%" }}
-                            />{" "}
-                          </div>
-                        </div>
-                        <div className="card-stacked">
+                      <Tilt
+                        className="Tilt"
+                        options={{ max: 25 }}
+                        style={{ height: 200, width: "auto" }}
+                      >
+                        <div className="Tilt-inner">
+                          {" "}
                           <div className="card-content">
-                            <span>
-                              <ReactRevealText
-                                threshold={0.4}
-                                show={this.state.show}
-                              >
-                                Since first time typed in "Hello World" in
-                                Python, while taking very first course in
-                                programming "Python: for absolute beginners", I
-                                fell in love with programming. It was a quite
-                                long way till I got to Web Development, i
-                                certainly knew I love doing this, but so many
-                                ways to use programming... Learned very basics
-                                of few languages and decided to stay in Web Dev.
-                                Something what we use everyday and something
-                                people can see and appreciate if its done right!
-                              </ReactRevealText>
-                            </span>
+                            <p>
+                              Since first time typed in "Hello World" in Python,
+                              while taking very first course in programming
+                              "Python: for absolute beginners", I fell in love
+                              with programming. Very passionate about technology
+                              and everything about it.
+                            </p>
                           </div>
-                          <div className="card-action" />
                         </div>
-                      </div>
-                    </Tilt>
-                  </IconContext.Provider>
+                      </Tilt>
+                    </IconContext.Provider>
+                  </div>
                 </div>
               </div>
             </div>

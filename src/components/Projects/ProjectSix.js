@@ -1,15 +1,17 @@
 import React from "react";
 import posed from "react-pose";
-
+import "./Projects.css";
 import { IconContext } from "react-icons";
 import Slider from "react-slick";
 
 const settings = {
   dots: true,
+  dotsClass: "slick-dots",
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  className: "productSlider"
 };
 const Box = posed.div({
   hoverable: true,
@@ -39,44 +41,69 @@ const ProjectSix = () => {
             <div className="center-align center">
               <Slider {...settings}>
                 <img
-                  src="images/Projects/ProjectsPictures/portfolio/1.png"
+                  src="images/Projects/ProjectsPictures/dietinfo/1.png"
                   alt=""
                   className="responsive-img"
                 />
                 <img
-                  src="images/Projects/ProjectsPictures/portfolio/2.png"
+                  src="images/Projects/ProjectsPictures/dietinfo/2.png"
                   alt=""
                   className="responsive-img"
                 />
                 <img
-                  src="images/Projects/ProjectsPictures/portfolio/3.png"
+                  src="images/Projects/ProjectsPictures/dietinfo/3.png"
                   alt=""
                   className="responsive-img"
                 />
                 <img
-                  src="images/Projects/ProjectsPictures/portfolio/4.png"
+                  src="images/Projects/ProjectsPictures/dietinfo/4.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/dietinfo/5.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/dietinfo/6.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/dietinfo/7.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/dietinfo/8.png"
+                  alt=""
+                  className="responsive-img"
+                />
+                <img
+                  src="images/Projects/ProjectsPictures/dietinfo/10.png"
                   alt=""
                   className="responsive-img"
                 />
               </Slider>
             </div>
-
-            <h5 className="white-text">Check out code </h5>
-
-            <a
-              className="pulsate-fwd"
-              href="https://github.com/JoeVincentt/portfolio1.0"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {" "}
-              <img
-                src="images/Projects/github.png"
-                alt="Github"
-                style={{ width: "50px", cursor: "pointer" }}
+            <div style={{ marginTop: "40px" }}>
+              <h5 className="white-text">Check out code </h5>
+              <a
                 className="pulsate-fwd"
-              />
-            </a>
+                href="https://github.com/JoeVincentt/DietInfo"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                <img
+                  src="images/Projects/github.png"
+                  alt="Github"
+                  style={{ width: "50px", cursor: "pointer" }}
+                  className="pulsate-fwd"
+                />
+              </a>
+            </div>
           </div>{" "}
           <div className="col  m3 l3 hide-on-small-only">
             <ul
@@ -101,7 +128,7 @@ const ProjectSix = () => {
                     <li>
                       <img
                         className="skills-img"
-                        src="images/Skills/mdl.png"
+                        src="images/Skills/expo.png"
                         alt="mdl"
                         style={{ height: "45px" }}
                       />
@@ -111,9 +138,19 @@ const ProjectSix = () => {
                     <li>
                       <img
                         className="skills-img"
-                        src="images/Skills/css.png"
+                        src="images/Skills/native-base.png"
                         alt="css"
-                        style={{ width: "60px" }}
+                        style={{ width: "45px" }}
+                      />
+                    </li>{" "}
+                  </Box>{" "}
+                  <Box>
+                    <li>
+                      <img
+                        className="skills-img"
+                        src="images/Skills/firebase.png"
+                        alt="css"
+                        style={{ width: "45px" }}
                       />
                     </li>{" "}
                   </Box>{" "}
