@@ -22,7 +22,7 @@ import ProjectSix from "./components/Projects/ProjectSix";
 import ProjectSeven from "./components/Projects/ProjectSeven";
 // import MiniProjects from "./components/Projects/MiniProjects";
 
-const anchors = ["Main", "Skills", "Projects", "About", "Contact"];
+const anchors = ["Main", "Skills", "Projects", "Contact", "About"];
 
 const Fullpage = () => (
   <React.Fragment>

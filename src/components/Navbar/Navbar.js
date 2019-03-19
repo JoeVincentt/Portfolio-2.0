@@ -36,7 +36,7 @@ const charPoses = {
   }
 };
 
-const Box = posed.div({
+const Box = posed.a({
   hoverable: true,
   pressable: true,
   init: {
@@ -44,8 +44,8 @@ const Box = posed.div({
     boxShadow: "0px 0px 0px rgba(0,0,0,0)"
   },
   hover: {
-    scale: 1.2,
-    boxShadow: "0px 5px 10px rgba(0,0,0,0.5)"
+    scale: 1.3,
+    boxShadow: "0px 3px 7px rgba(0,0,0,0.5)"
   },
   press: {
     scale: 1.1,
@@ -77,38 +77,28 @@ const NavbarComponent = () => (
             <div className="col s12 l12 m12 pull-s1">
               <ul className="right  z-depth-0">
                 <li>
-                  <Box>
-                    <a href="/#Main" className="atag">
-                      <FaHome className="icon-button" />
-                    </a>
+                  <Box href="/#Main" className="atag">
+                    <FaHome className="icon-button" />
                   </Box>
                 </li>
                 <li>
-                  <Box>
-                    <a href="/#Skills">
-                      <FaGraduationCap className="icon-button" />
-                    </a>
+                  <Box href="/#Skills">
+                    <FaGraduationCap className="icon-button" />
                   </Box>
                 </li>
                 <li>
-                  <Box>
-                    <a href="#Projects">
-                      <FaDev className="icon-button" />
-                    </a>
+                  <Box href="#Projects">
+                    <FaDev className="icon-button" />
                   </Box>
                 </li>
-                <li>
-                  <Box>
-                    <a href="#About">
-                      <FaUser className="icon-button" />
-                    </a>
+                {/* <li>
+                  <Box href="#About">
+                    <FaUser className="icon-button" />
                   </Box>
-                </li>
+                </li> */}
                 <li style={{ marginRight: "20px" }}>
-                  <Box>
-                    <a href="#Contact">
-                      <FaAddressCard className="icon-button" />
-                    </a>
+                  <Box href="#Contact">
+                    <FaAddressCard className="icon-button" />
                   </Box>
                 </li>
               </ul>
@@ -117,12 +107,6 @@ const NavbarComponent = () => (
         </div>
       </nav>
     </IconContext.Provider>
-    {/*         
-<a href="#Main">Main</a>
-<a href="#Skills">Skills</a>
-<a href="#Projects">Projects</a>
-<a href="#About">About</a>
-<a href="#Contact">Contact</a> */}
   </Header>
 );
 
